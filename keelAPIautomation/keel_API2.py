@@ -9,7 +9,7 @@ b1=randomdata.data1
 b2= randomdata.data2
 b4=randomdata.data4
 b5=randomdata.data5
-randomdata.generate_data()
+
 
 with open("loads.json", "r") as json_file:   
     json_data = json.load(json_file)
@@ -25,13 +25,14 @@ with open("loads.json", "r") as json_file1:
     
 # This API use for Super Admin login. 
 def post1Request():
+    randomdata.generate_data()
     url=base_url+ "/login" 
     res1=requests.post(url, data=b1)
     assert res1.status_code==200, "Login Failed "
     resp= res1.json()
     token1 =resp['access_token']
-    print(".......LOGIN REQUEST IS DONE.......")
-    print(".......=====================.......\n\n")
+    # print(".......LOGIN REQUEST IS DONE.......")
+    # print(".......=====================.......\n\n")
     global head
     head = {"Authorization": f"Bearer {token1}"}
     
@@ -42,7 +43,7 @@ def checkorgname():
     res=requests.get(url, headers=head)
     resp=res.json()
     print(resp['data']['result']['isAvailable'])
-    assert resp['data']['result']['isAvailable']==True , "The organization name is already exists"
+    assert resp['data']['result']['isAvailable']== True , "The organization name is already exists"
     print(".......CHECK ORG NAME REQUEST IS DONE.......")
     print(".......=====================.......\n\n")
     
@@ -173,17 +174,17 @@ def emailTemplate():
     
       
     
-post1Request()
-checkorgname()
-domainRequest()
-logoRequest()
-countryId()
-addOrganization()
-getRequest()
-listdb()
-desRequest()
-addDes()
-listRoles()
-addRole()
-# createEmail()
-# emailTemplate()
+# post1Request()
+# checkorgname()
+# domainRequest()
+# logoRequest()
+# countryId()
+# addOrganization()
+# getRequest()
+# listdb()
+# desRequest()
+# addDes()
+# listRoles()
+# addRole()
+# # createEmail()
+# # emailTemplate()

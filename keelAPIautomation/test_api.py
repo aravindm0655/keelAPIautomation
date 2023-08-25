@@ -63,3 +63,4 @@ def test_12(setup_api_environment):
 # Run pytest when this script is executed
 if __name__ == "__main__":
     pytest.main()
+

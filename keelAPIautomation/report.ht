@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.ht</h1>
-    <p>Report generated on 25-Aug-2023 at 16:04:50 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 25-Aug-2023 at 16:21:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>12 tests ran in 26.66 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">9 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>12 tests ran in 12.77 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">12 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -267,42 +267,39 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_api.py::test_2</td>
-          <td class="col-duration">0.98</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">setup_api_environment = None<br/><br/>    def test_2(setup_api_environment):<br/>&gt;       checkorgname()<br/><br/>test_api.py:30: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>    def checkorgname():<br/>        organizationName =json_data[&#x27;organizationName&#x27;]<br/>        url=base_url+ f&quot;/checkorgname?organizationName={organizationName}&quot;<br/>        res1=requests.get(url, headers=head)<br/>        resp=res1.json()<br/>&gt;       assert resp[&#x27;data&#x27;][&#x27;result&#x27;][&#x27;isAvailable&#x27;]==True , &quot;The organization name is already exists&quot;<br/><span class="error">E       AssertionError: The organization name is already exists</span><br/><br/>keel_API2.py:44: AssertionError<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_api.py::test_3</td>
-          <td class="col-duration">0.91</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">setup_api_environment = None<br/><br/>    def test_3(setup_api_environment):<br/>&gt;       domainRequest()<br/><br/>test_api.py:33: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>    def domainRequest():<br/>        domaimName =json_data[&#x27;subDomain&#x27;]<br/>        url=base_url+ f&quot;/checkdomain?domain={domaimName}&quot;<br/>        res1=requests.get(url, headers=head)<br/>        resp=res1.json()<br/>&gt;       assert resp[&#x27;data&#x27;][&#x27;result&#x27;][&#x27;isAvailable&#x27;]== True , &quot;The subdomain name is already exists&quot;<br/><span class="error">E       AssertionError: The subdomain name is already exists</span><br/><br/>keel_API2.py:54: AssertionError<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_api.py::test_6</td>
-          <td class="col-duration">0.83</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">setup_api_environment = None<br/><br/>    def test_6(setup_api_environment):<br/>&gt;       addOrganization()<br/><br/>test_api.py:42: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>    def addOrganization():<br/>        url =base_url+ &quot;/addorganization&quot;<br/>        res = requests.post(url, json=json_data, headers=head)<br/>&gt;       assert res.status_code==200, &quot;Creation Failed &quot;<br/><span class="error">E       AssertionError: Creation Failed</span><br/><br/>keel_API2.py:89: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_1</td>
-          <td class="col-duration">0.93</td>
+          <td class="col-duration">0.90</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......LOGIN REQUEST IS DONE.......
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_2</td>
+          <td class="col-duration">0.81</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>True
+.......CHECK ORG NAME REQUEST IS DONE.......
+.......=====================.......
+
+
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_3</td>
+          <td class="col-duration">0.74</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>True
+.......CHECK DOMAIN NAME REQUEST IS DONE.......
 .......=====================.......
 
 
@@ -311,7 +308,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_4</td>
-          <td class="col-duration">1.00</td>
+          <td class="col-duration">0.97</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -324,7 +321,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_5</td>
-          <td class="col-duration">1.78</td>
+          <td class="col-duration">1.74</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -336,8 +333,21 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_6</td>
+          <td class="col-duration">1.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......ADD ORGANIZATION  IS DONE.......
+.......=====================.......
+
+
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_7</td>
-          <td class="col-duration">0.90</td>
+          <td class="col-duration">0.85</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -350,7 +360,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_8</td>
-          <td class="col-duration">0.78</td>
+          <td class="col-duration">0.89</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -363,7 +373,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_9</td>
-          <td class="col-duration">1.31</td>
+          <td class="col-duration">1.23</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -376,7 +386,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_10</td>
-          <td class="col-duration">0.81</td>
+          <td class="col-duration">0.78</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -389,7 +399,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_11</td>
-          <td class="col-duration">0.93</td>
+          <td class="col-duration">0.85</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -402,7 +412,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_12</td>
-          <td class="col-duration">1.48</td>
+          <td class="col-duration">1.56</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
