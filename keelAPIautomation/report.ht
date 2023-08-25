@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.ht</h1>
-    <p>Report generated on 25-Aug-2023 at 16:21:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 25-Aug-2023 at 23:05:51 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>12 tests ran in 12.77 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">12 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>23 tests ran in 30.55 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">22 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -267,11 +267,20 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_api.py::test_14</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">setup_api_environment = None<br/><br/>    def test_14(setup_api_environment):<br/>&gt;       createEmail()<br/><br/>test_api.py:74: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>keel_API2.py:170: in createEmail<br/>    res=requests.post(url,body=b6, headers=head)<br/>..\pytest\.venv\Lib\site-packages\requests\api.py:115: in post<br/>    return request(&quot;post&quot;, url, data=data, json=json, **kwargs)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>method = &#x27;post&#x27;, url = &#x27;https://keel-api-dev.talentship.io/apiemail-services/create-template&#x27;<br/>kwargs = {&#x27;body&#x27;: {&#x27;active&#x27;: True, &#x27;companyCategory&#x27;: &#x27;IT&#x27;, &#x27;logoPath&#x27;: &#x27;https://hrms-poc.s3.eu-west-1.amazonaws.com/test-compa...29tIiwiZmlyc3ROYW1lIjoic3VwZXIiLCJsYXN0TmFtZSI6ImFkbWluIn0.1Qkocc3vwxrXsmRjwK-sF9ifKWPMZCMD8P-DMe74uP0&#x27;}, &#x27;json&#x27;: None}<br/>session = &lt;requests.sessions.Session object at 0x000001FB25A5A510&gt;<br/><br/>    def request(method, url, **kwargs):<br/>        &quot;&quot;&quot;Constructs and sends a :class:`Request &lt;Request&gt;`.<br/>    <br/>        :param method: method for the new :class:`Request` object: ``GET``, ``OPTIONS``, ``HEAD``, ``POST``, ``PUT``, ``PATCH``, or ``DELETE``.<br/>        :param url: URL for the new :class:`Request` object.<br/>        :param params: (optional) Dictionary, list of tuples or bytes to send<br/>            in the query string for the :class:`Request`.<br/>        :param data: (optional) Dictionary, list of tuples, bytes, or file-like<br/>            object to send in the body of the :class:`Request`.<br/>        :param json: (optional) A JSON serializable Python object to send in the body of the :class:`Request`.<br/>        :param headers: (optional) Dictionary of HTTP Headers to send with the :class:`Request`.<br/>        :param cookies: (optional) Dict or CookieJar object to send with the :class:`Request`.<br/>        :param files: (optional) Dictionary of ``&#x27;name&#x27;: file-like-objects`` (or ``{&#x27;name&#x27;: file-tuple}``) for multipart encoding upload.<br/>            ``file-tuple`` can be a 2-tuple ``(&#x27;filename&#x27;, fileobj)``, 3-tuple ``(&#x27;filename&#x27;, fileobj, &#x27;content_type&#x27;)``<br/>            or a 4-tuple ``(&#x27;filename&#x27;, fileobj, &#x27;content_type&#x27;, custom_headers)``, where ``&#x27;content-type&#x27;`` is a string<br/>            defining the content type of the given file and ``custom_headers`` a dict-like object containing additional headers<br/>            to add for the file.<br/>        :param auth: (optional) Auth tuple to enable Basic/Digest/Custom HTTP Auth.<br/>        :param timeout: (optional) How many seconds to wait for the server to send data<br/>            before giving up, as a float, or a :ref:`(connect timeout, read<br/>            timeout) &lt;timeouts&gt;` tuple.<br/>        :type timeout: float or tuple<br/>        :param allow_redirects: (optional) Boolean. Enable/disable GET/OPTIONS/POST/PUT/PATCH/DELETE/HEAD redirection. Defaults to ``True``.<br/>        :type allow_redirects: bool<br/>        :param proxies: (optional) Dictionary mapping protocol to the URL of the proxy.<br/>        :param verify: (optional) Either a boolean, in which case it controls whether we verify<br/>                the server&#x27;s TLS certificate, or a string, in which case it must be a path<br/>                to a CA bundle to use. Defaults to ``True``.<br/>        :param stream: (optional) if ``False``, the response content will be immediately downloaded.<br/>        :param cert: (optional) if String, path to ssl client cert file (.pem). If Tuple, (&#x27;cert&#x27;, &#x27;key&#x27;) pair.<br/>        :return: :class:`Response &lt;Response&gt;` object<br/>        :rtype: requests.Response<br/>    <br/>        Usage::<br/>    <br/>          &gt;&gt;&gt; import requests<br/>          &gt;&gt;&gt; req = requests.request(&#x27;GET&#x27;, &#x27;https://httpbin.org/get&#x27;)<br/>          &gt;&gt;&gt; req<br/>          &lt;Response [200]&gt;<br/>        &quot;&quot;&quot;<br/>    <br/>        # By using the &#x27;with&#x27; statement we are sure the session is closed, thus we<br/>        # avoid leaving sockets open which can trigger a ResourceWarning in some<br/>        # cases, and look like a memory leak in others.<br/>        with sessions.Session() as session:<br/>&gt;           return session.request(method=method, url=url, **kwargs)<br/><span class="error">E           TypeError: Session.request() got an unexpected keyword argument &#x27;body&#x27;</span><br/><br/>..\pytest\.venv\Lib\site-packages\requests\api.py:59: TypeError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_1</td>
-          <td class="col-duration">0.90</td>
+          <td class="col-duration">1.24</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -280,144 +289,189 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_2</td>
-          <td class="col-duration">0.81</td>
+          <td class="col-duration">0.99</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>True
-.......CHECK ORG NAME REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_3</td>
-          <td class="col-duration">0.74</td>
+          <td class="col-duration">0.95</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>True
-.......CHECK DOMAIN NAME REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_4</td>
-          <td class="col-duration">0.97</td>
+          <td class="col-duration">1.28</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......UPLOAD LOGO REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_5</td>
-          <td class="col-duration">1.74</td>
+          <td class="col-duration">2.77</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......COUNTRY LIST REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_6</td>
-          <td class="col-duration">1.25</td>
+          <td class="col-duration">1.69</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......ADD ORGANIZATION  IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_7</td>
-          <td class="col-duration">0.85</td>
+          <td class="col-duration">1.27</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......GET REQUEST USING APPKEY IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_8</td>
-          <td class="col-duration">0.89</td>
+          <td class="col-duration">1.21</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......DISPLAY REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_9</td>
-          <td class="col-duration">1.23</td>
+          <td class="col-duration">2.04</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......DESIGNATION REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_10</td>
-          <td class="col-duration">0.78</td>
+          <td class="col-duration">1.22</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......ADD DESIGNATION REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_11</td>
-          <td class="col-duration">0.85</td>
+          <td class="col-duration">1.16</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......LISTING ROLES REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_api.py::test_12</td>
-          <td class="col-duration">1.56</td>
+          <td class="col-duration">1.99</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>.......ADDING ROLES REQUEST IS DONE.......
-.......=====================.......
-
-
-<br/></div></td></tr></tbody></table></body></html>
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_13</td>
+          <td class="col-duration">2.56</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_15</td>
+          <td class="col-duration">0.80</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_16</td>
+          <td class="col-duration">1.30</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>&lt;Response [200]&gt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_17</td>
+          <td class="col-duration">1.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_18</td>
+          <td class="col-duration">1.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_19</td>
+          <td class="col-duration">0.95</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_20</td>
+          <td class="col-duration">1.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_21</td>
+          <td class="col-duration">0.81</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_22</td>
+          <td class="col-duration">1.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_api.py::test_23</td>
+          <td class="col-duration">1.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>

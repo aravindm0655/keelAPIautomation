@@ -18,13 +18,22 @@ class randomdata:
     data4={
     "designation":["CEO","CtO"]
     }
+    
     data5={
     "roleName":"Group Admin",
     "roleShotName":"groupadmin",
     "permissionNo":"077",
     "roleDesceiption":"Can able change all of his own data"
     }
-
+    data7={
+    "packageName":"Business analyst intern",
+    "packageDescription":"The Business Analysis is a comprehensive platform that streamlines the recruitment process, allowing employers to post job openings, review applications, and schedule interviews."
+    }
+    data8={
+    "packageId":1,
+    "featureName":"Add Employee",
+    "featureDescription":"Add Employee in order to proceed the process"
+    }
     def generate_random_name(length=5):
         random_name = ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
         return random_name

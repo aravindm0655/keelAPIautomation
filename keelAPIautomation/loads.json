@@ -1,7 +1,7 @@
 
 {
-    "organizationName": "vwrds",
-    "subDomain": "reghk",
+    "organizationName": "duvex",
+    "subDomain": "hfozg",
     "companyCategory": "IT",
     "logoPath": "https://hrms-poc.s3.eu-west-1.amazonaws.com/test-company2.svg",
     "active": true,
@@ -16,9 +16,9 @@
         "phone": "+91333543245",
         "designation": "CEO",
         "role": 1,
-        "email": "uwginu@mailinator.com",
+        "email": "azjcia@mailinator.com",
         "address": "123 Main Street",
-        "country": 218,
+        "country": 143,
         "state": null,
         "city": null,
         "pincode": "641006",

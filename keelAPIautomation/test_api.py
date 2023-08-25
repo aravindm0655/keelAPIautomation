@@ -13,9 +13,17 @@ from keel_API2 import (
     addDes,
     listRoles,
     addRole,
-    # refreshToken,
-    # createEmail,
-    # emailTemplate
+    refreshToken,
+    createEmail,
+    emailTemplate,
+    emailTofSES,
+    emailTofID,
+    createPackage,
+    getPackage,
+    getPakagebyID,
+    createFeatureP,
+    getFeaturesforP,
+    getFeaturesforPbyID
 )
 
 @pytest.fixture(scope="module")
@@ -58,9 +66,41 @@ def test_11(setup_api_environment):
     
 def test_12(setup_api_environment):
     addRole()    
+
+def test_13(setup_api_environment):
+    refreshToken()
+    
+def test_14(setup_api_environment):
+    createEmail()
+    
+def test_15(setup_api_environment):
+    emailTemplate()
+    
+def test_16(setup_api_environment):
+    emailTofSES()
+    
+def test_17(setup_api_environment):
+    emailTofID()
+    
+def test_18(setup_api_environment):
+    createPackage()
+    
+def test_19(setup_api_environment):
+    getPackage()
+    
+def test_20(setup_api_environment):
+    getPakagebyID()
+    
+def test_21(setup_api_environment):
+    createFeatureP()
+    
+def test_22(setup_api_environment):
+    getFeaturesforP()
+    
+def test_23(setup_api_environment):
+    getFeaturesforPbyID()
     
     
-# Run pytest when this script is executed
 if __name__ == "__main__":
     pytest.main()
 
