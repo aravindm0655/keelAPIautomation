@@ -1,29 +1,27 @@
 import pytest
 
-from keel_API2 import (
+from tenantApi import (
     loginRequest,
-    checkOrgname,
-    domainRequest,
-    logoRequest,
-    countryId,
-    addOrganization,
-    getAppkeyRequest,
-    listdb,
-    desRequest,
-    addDes, 
-    listRoles,
-    addRole, 
-    # refreshToken,
-    # createEmail,
-    # emailTemplate,
-    emailTofSES,
-    emailTofID,
-    createPackage,
-    getPackage,
-    getPakagebyID,
-    createFeatureP,
-    getFeaturesforP,
-    getFeaturesforPbyID
+    orgList,
+    addBasics,
+    designation,
+    designationlist,
+    employeebyAppkey,
+    orgbyAppkey,
+    employeeby_uuid,
+    perdonalIndobyEid,
+    updateInfobyEid,
+    createEdu,
+    listEdu,
+    # addGender()
+    listGender,
+    uploadProfile,
+    listEDU,
+    updateFamDatails,
+    getFamDatails,
+    getRelationType,
+    getSkill,
+    addSkill
 )
 
 @pytest.fixture(scope="module")
@@ -35,64 +33,64 @@ def test_1(setup_api_environment):
     loginRequest()
 
 def test_2(setup_api_environment):
-    checkOrgname()
+    orgList()
 
 def test_3(setup_api_environment):
-    domainRequest()
+    addBasics()
 
 def test_4(setup_api_environment):
-    logoRequest()
+    designation()
      
 def test_5(setup_api_environment):
-    countryId()
+    designationlist()
 
 def test_6(setup_api_environment):
-    addOrganization()
+    employeebyAppkey()
     
 def test_7(setup_api_environment):
-    getAppkeyRequest()
+    orgbyAppkey()
     
 def test_8(setup_api_environment):
-    listdb()
+    employeeby_uuid()
     
 def test_9(setup_api_environment):
-    desRequest()
+    perdonalIndobyEid()
     
 def test_10(setup_api_environment):
-    addDes()
+    updateInfobyEid()
     
 def test_11(setup_api_environment):
-    listRoles()
+    createEdu()
     
 def test_12(setup_api_environment):
-    addRole()    
+    listEdu()    
 
 # def test_13(setup_api_environment):
-#     refreshToken()
+#     addGender()
     
-# def test_14(setup_api_environment):
-#     createEmail()
+def test_14(setup_api_environment):
+    listGender()
     
-# def test_15(setup_api_environment):
-#     emailTemplate()
+def test_15(setup_api_environment):
+    uploadProfile()
     
 def test_16(setup_api_environment):
-    emailTofSES()
+    listEDU()
     
 def test_17(setup_api_environment):
-    emailTofID()
+    updateFamDatails()
     
 def test_18(setup_api_environment):
-    createPackage()
+    getFamDatails()
     
 def test_19(setup_api_environment):
-    getPackage()
+    getRelationType()
     
 def test_20(setup_api_environment):
-    getPakagebyID()
+    getSkill()
     
 def test_21(setup_api_environment):
-    createFeatureP()
+    addSkill()
     
 def test_22(setup_api_environment):
     getFeaturesforP()

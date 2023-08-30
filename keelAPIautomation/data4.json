@@ -1,0 +1,18 @@
+{
+    "gender": null,
+    "dob": null,
+    "personalEmail1": "pavankumar@gamil.com",
+    "personalEmail2": "pavankumar@gmail.com",
+    "primaryPhone": "+91 6353263",
+    "secondaryPhone": "+91 63353263",
+    "communicationAddress": "456 Park Ave, Town",
+    "communicationAddressCountry": 101,
+    "communicationAddressState": null,
+    "communicationAddressCity": null,
+    "communicationAddressPincode":641006,
+    "permanentAddress": "456 Park Ave, Town",
+    "permanentAddressCountry": 1,
+    "permanentAddressState": null,
+    "permanentAddressCity": null,
+    "profilePicUrl": "https://hrms-poc.s3.eu-west-1.amazonaws.com/89/5054fa0d-c4df-4aa8-9e49-3f06d3848e3c/profile_image.jpg"
+  }
