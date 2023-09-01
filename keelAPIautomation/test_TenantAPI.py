@@ -13,7 +13,7 @@ from tenantApi import (
     updateInfobyEid,
     createEdu,
     listEdu,
-    # addGender()
+    addGender,
     listGender,
     uploadProfile,
     listEDU,
@@ -21,7 +21,21 @@ from tenantApi import (
     getFamDatails,
     getRelationType,
     getSkill,
-    addSkill
+    addSkill,
+    previousEmployment,
+    updatePreEmp,
+    listPreEmp,
+    deletePreEmp,
+    uploadPreEmpDoc,
+    proofType,
+    listProofType,
+    uploadEmpId,
+    addEmpId,
+    listEmpId,
+    deleteEmpid,
+    addCalc,
+    uploadEmpStstus,
+    updateEmpPortal
 )
 
 @pytest.fixture(scope="module")
@@ -65,8 +79,8 @@ def test_11(setup_api_environment):
 def test_12(setup_api_environment):
     listEdu()    
 
-# def test_13(setup_api_environment):
-#     addGender()
+def test_13(setup_api_environment):
+    addGender()
     
 def test_14(setup_api_environment):
     listGender()
@@ -93,12 +107,48 @@ def test_21(setup_api_environment):
     addSkill()
     
 def test_22(setup_api_environment):
-    getFeaturesforP()
+    previousEmployment()
     
 def test_23(setup_api_environment):
-    getFeaturesforPbyID()
+    updatePreEmp()
     
-    
+def test_24(setup_api_environment):
+    listPreEmp()
+
+def test_25(setup_api_environment):
+    deletePreEmp()
+
+def test_26(setup_api_environment):
+    uploadPreEmpDoc()
+
+def test_27(setup_api_environment):
+    proofType()
+
+def test_28(setup_api_environment):
+    listProofType()
+
+def test_29(setup_api_environment):
+    uploadEmpId()
+
+def test_30(setup_api_environment):
+    addEmpId()
+
+def test_31(setup_api_environment):
+    listEmpId()
+
+def test_32(setup_api_environment):
+    deleteEmpid()
+
+def test_33(setup_api_environment):
+    addCalc()
+
+def test_34(setup_api_environment):
+    uploadEmpStstus()
+
+def test_35(setup_api_environment):
+    updateEmpPortal()
+
+  
 if __name__ == "__main__":
     pytest.main()
 

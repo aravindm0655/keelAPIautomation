@@ -1,0 +1,46 @@
+{
+    "employeeId": 129,
+    "employementName": "dffd",
+    "startDate": "2022-02-01",
+    "endDate": "2023-01-01",
+    "relievingLetter": [
+        {
+            "fileName": "relievingLetter_front.pdf",
+            "format": "pdf",
+            "url": "http://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/relievingLetter_front.pdf"
+        },
+        {
+            "fileName": "relievingLetter_back.pdf",
+            "format": "pdf",
+            "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/relievingLetter_back.pdf"
+        }
+    ],
+    "offerLetter": [
+        {
+            "fileName": "offerLetter_front.pdf",
+            "format": "pdf",
+            "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/offerLetter_front.pdf"
+        },
+        {
+            "fileName": "offerLetter_back.pdf",
+            "format": "pdf",
+            "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/offerLetter_back.pdf"
+        }
+    ],
+    "paySlipLetter": [
+        {
+            "fileName": "paySlipLetter_front.pdf",
+            "format": "pdf",
+            "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/paySlipLetter_front.pdf"
+        },
+        {
+            "fileName": "paySlipLetter_back.pdf",
+            "format": "pdf",
+            "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/paySlipLetter_back.pdf"
+        }
+    ],
+    "skills": [
+        { "skill_id": 1 },
+        { "skill_id": 2 }
+    ]
+}

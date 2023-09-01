@@ -18,7 +18,6 @@ with open("load1.json", "r") as json_file1:
 with open("load2.json", "r") as json_file2:   
     b5 = json.load(json_file2)
 
-
  
 
 def loginRequest():

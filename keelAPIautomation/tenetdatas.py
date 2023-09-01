@@ -20,8 +20,53 @@ class RandomData:
         "gender": 2,
         "dob": "1999-07-21"
         }
+    data12={
+        "employeeuuid": "8f8c3672-c10b-4032-8602-266a9f512162",
+        "identificationFiles": "Files",
+    }
+    data13={
+        "proofType": 2,
+        "employeeId": 11,
+        "proofIdNumber": "AAAAA0000A",
+        "url": [
+            {
+                "fileName": "ti.jpeg.pdf",
+                "format": "pdf",
+                "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/organizationId-100/UUID-944e11bf-ca76-4882-a437-74cd19ed5d76/ identification/ti.jpeg.pdf",
+                "fileSize":"5.0 MB"
+
+            },
+            {
+                "fileName": "tiger-jpg.pdf",
+                "format": "pdf",
+                "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/organizationId-100/UUID-944e11bf-ca76-4882-a437-74cd19ed5d76/ identification/tiger-jpg.pdf",
+                "fileSize":"0.23 MB"
+            }
+        ]
+    }
+    data14={
+
+        "uuid": "b6e232e7-0316-441e-a6b5-5c634c244e5b"
+
+    }
+    data15={
+        "employee_id": 129,
+        "is_active": True
+    }
+    data16={
+        "firstName": "kb",
+        "lastName": "pavan",
+        "officialEmail": "pavankumar@mailinator.com",
+        "companyUserId": "TS030",
+        "designation": 24,
+        "role": 607,
+        "reportingManager": 373,
+        "userStatus": 1,
+        "workLocation": None,
+        "joiningDate": None,
+        "bgvCompletionDate": None
+    }
     
-   
 
     @staticmethod
     def generate_random_name(length=5):

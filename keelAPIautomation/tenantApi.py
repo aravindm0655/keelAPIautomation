@@ -6,7 +6,13 @@ from tenetdatas import RandomData
 d1=RandomData.data1
 d7=RandomData.data7
 d8=RandomData.data8
+d12=RandomData.data12
+d13=RandomData.data13
+d14=RandomData.data14
+d15=RandomData.data15
+d16=RandomData.data16
 eid=129
+id=5 #id change 
 base_url="https://keel-tenants-dev.talentship.io"
 
 with open("loads.json", "r") as json_file:   
@@ -182,6 +188,87 @@ def addSkill():
     print(res) #response 500  
     # assert res.status_code==200, "Lisi=ting gender failed"
 
+def previousEmployment(): # not executed 
+    url=base_url+f"/tenantapi/v1/{appkey}/addpreviousemployment"
+    with open("data10.json", "r") as json_file:   
+        d10 = json.load(json_file)       
+    res=requests.post(url, data=d10, headers=head)
+    print(res)
+    
+def updatePreEmp():  # not executed
+    url=base_url+f"/tenantapi/v1/{appkey}/previousemployment/{eid}/{id}"
+    with open("data11.json", "r") as json_file:   
+        d11 = json.load(json_file)   
+    res=requests.post(url, data=d11, headers=head)
+    print(res)
+
+def listPreEmp():
+    url=base_url+f"/tenantapi/v1/{appkey}/listpreviousemployment/{eid}?id={id}"
+    res= requests.get(url, headers=head)
+    print(res)
+
+def deletePreEmp():
+    url=base_url+f"/tenantapi/v1/{appkey}/previousemployment/{eid}/{id}"
+    res= requests.delete(url, headers=head)
+    print(res)
+
+def uploadPreEmpDoc():
+    url=base_url+f"/tenantapi/v1/{appkey}/previousemploymentdocumentupload"
+    with open("C:/Users/aravi/Desktop/keelAPIautomation/RZFZ7102.JPG", "rb") as image_file:
+        file = {"image": image_file}
+    res=requests.post(url, bata=d1 ,files=file, headers=head)
+
+
+def proofType():
+    url=base_url+"/api/v1/prooftypes"
+    d11={
+        "proofType":["pan card"]
+    }
+    res=requests.post(url, data=d11, headers=head)
+
+def listProofType():
+    url=base_url+f"/api/v1/prooftypes"
+    res=requests.get(url,headers=head) 
+    print(res)
+    assert res.status_code==200, "Lisiting proof types failed"
+    
+def uploadEmpId(): #doubts
+    url=base_url+f"/tenantapi/v1/{appkey}/identificationupload"
+    with open("C:/Users/aravi/Desktop/keelAPIautomation/RZFZ7102.JPG", "rb") as image_file:
+        file = {"image": image_file}
+    res=requests.post(url,data=d12, files=file, headers=head)
+    print(res)
+    
+def addEmpId():
+    url=base_url+f"/tenantapi/v1/{appkey}/employee-identification"
+    res=requests.post(url, data=d13, headers=head)
+    print(res)
+    
+def listEmpId():
+    url=base_url+f"/tenantapi/v1/{appkey}/Listidentification/{eid}" 
+    res=requests.get(url, headers=head)
+    print(res)
+    assert res.status_code==200, "Lisiting Employment identification Documents  failed"
+
+def deleteEmpid():
+    url= base_url+f"/tenantapi/v1/{appkey}/identificationdetails/{eid}"
+    res=requests.delete(url, headers=head)
+    print(res)
+
+def addCalc():
+    url=base_url+f"/tenantapi/v1/{appkey}/calculator"
+    res=requests.post(url,data=d14,headers=head) #modify data
+    print(res)
+
+def uploadEmpStstus():
+    url=base_url+f"/tenantapi/v1/{appkey}/updateEmployeeStatus"
+    res=requests.put(url, data=d15,headers=head) #checjk data
+    print(res)
+
+def updateEmpPortal():
+    url=base_url+f"/tenantapi/v1/{appkey}/employee/updatebasic/{eid}"
+    res=requests.put(url, data=d16,headers=head)
+    print(res)
 
 
 # loginRequest()
@@ -205,3 +292,17 @@ def addSkill():
 # getRelationType()
 # getSkill()
 # addSkill()
+# previousEmployment()
+# updatePreEmp()
+# listPreEmp()
+# deletePreEmp()
+# uploadPreEmpDoc()
+# proofType()
+# listProofType()
+# uploadEmpId()
+# addEmpId()
+# listEmpId()
+# deleteEmpid()
+# addCalc()
+# uploadEmpStstus()
+# updateEmpPortal()
