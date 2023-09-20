@@ -1,8 +1,22 @@
 {
+    "employeeId": 129,
     "employementName": "dffd",
     "startDate": "2022-02-01",
     "endDate": "2023-01-01",
-    "relievingLetter": null,
+    "relievingLetter": [
+        {
+            "fileName": "relievingLetter_front.pdf",
+            "format": "pdf",
+            "url": "http://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/relievingLetter_front.pdf",
+            "fileSize": "5.0 MB"
+        },
+        {
+            "fileName": "relievingLetter_back.pdf",
+            "format": "pdf",
+            "url": "https://hrms-poc.s3.eu-west-1.amazonaws.com/2/8f8c3672-c10b-4032-8602-266a9f512162/relievingLetter_back.pdf",
+            "fileSize": "5.0 MB"
+        }
+    ],
     "offerLetter": [
         {
             "fileName": "offerLetter_front.pdf",

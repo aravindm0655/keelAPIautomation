@@ -15,20 +15,21 @@ from tenantApi import (
     listEdu,
     addGender,
     listGender,
+    getRelationType,
     uploadProfile,
-    listEDU,
+    uploadDoc,
+    listEDUinfo,
     updateFamDatails,
     getFamDatails,
-    getRelationType,
     getSkill,
     addSkill,
-    previousEmployment,
-    updatePreEmp,
+    addPreEmp,
     listPreEmp,
+    updatePreEmp,
     deletePreEmp,
     uploadPreEmpDoc,
-    proofType,
     listProofType,
+    proofType,
     uploadEmpId,
     addEmpId,
     listEmpId,
@@ -40,14 +41,11 @@ from tenantApi import (
 
 @pytest.fixture(scope="module")
 def setup_api_environment():
+    loginRequest()
+    orgList()
     yield
 
 
-def test_1(setup_api_environment):
-    loginRequest()
-
-def test_2(setup_api_environment):
-    orgList()
 
 def test_3(setup_api_environment):
     addBasics()
@@ -89,7 +87,10 @@ def test_15(setup_api_environment):
     uploadProfile()
     
 def test_16(setup_api_environment):
-    listEDU()
+    uploadDoc()
+
+def test_161():
+    listEDUinfo()
     
 def test_17(setup_api_environment):
     updateFamDatails()
@@ -107,7 +108,7 @@ def test_21(setup_api_environment):
     addSkill()
     
 def test_22(setup_api_environment):
-    previousEmployment()
+    addPreEmp()
     
 def test_23(setup_api_environment):
     updatePreEmp()
